@@ -1,48 +1,118 @@
-// 1.
-// Reverse a String
-// Task: Write a function that takes a string and returns it reversed.
+// // 1.
+// // Reverse a String
+// // Task: Write a function that takes a string and returns it reversed.
 
-// Input: string s
-// Output: string
-// Constraints: s.length <= 1000.
-// Edge Case: Single character strings or empty strings.
-// Hint: Look into built-in string slicing or a simple loop.
-
-
-
-const string = "faysal s"
-// input = faysal 
-// output = lasyaf
-
-// todo
-//split & take first 
-//while loop and looping form length last to first
+// // Input: string s
+// // Output: string
+// // Constraints: s.length <= 1000.
+// // Edge Case: Single character strings or empty strings.
+// // Hint: Look into built-in string slicing or a simple loop.
 
 
 
+// const string = "faysal s"
+// // input = faysal 
+// // output = lasyaf
 
-function reversed(strArg: string) {
-
-    const normalizeString = strArg.split(" ")
-
-    const targetString = normalizeString[0]
+// // todo
+// //split & take first 
+// //while loop and looping form length last to first
 
 
-    let terry = ""
 
-    let i = targetString.length - 1
 
-    console.log(i);
+// function reversed(strArg: string) {
 
-    while (i >= 0) {
-        terry += targetString[i]
-console.log("i value decrement",i);
-        i--
+//     const normalizeString = strArg.split(" ")
+
+//     const targetString = normalizeString[0]
+
+
+//     let terry = ""
+
+//     let i = targetString.length - 1
+
+//     console.log(i);
+
+//     while (i >= 0) {
+//         terry += targetString[i]
+// console.log("i value decrement",i);
+//         i--
+//     }
+
+//     return terry
+// }
+
+
+
+// console.log(reversed(string));
+
+
+/*
+2. FizzBuzz
+Task: Print numbers from 1 to n. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; for multiples of both, print "FizzBuzz".
+
+Input: integer n
+Output: Printed lines or a list of strings.
+Constraints: 1 <= n <= 100.
+Edge Case: n = 1.
+Hint: Use the modulo operator % to check for remainders.
+
+*/
+
+
+
+/*
+input         
+todo( )
+write while loop 
+
+else if condition or swtich for moduls condition 
+
+else return number
+
+return the 
+*/
+
+
+
+
+function FizzBuzz(n: number) {
+    let i = 1;
+
+    while (i <= n) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i); 
+        }
+
+        i++;
     }
-
-    return terry
 }
 
+FizzBuzz(20);
 
 
-console.log(reversed(string));
+
+/*
+3. Find the Largest Number in an Array
+Task: Given an array of integers, return the largest value.
+
+Input: int[] nums
+Output: integer
+Constraints: Array will have at least one element.
+Edge Case: Array with all negative numbers.
+Hint: Initialize a variable with the first element of the array.
+*/ 
+
+
+function 
+
+/* */ 
+
+
