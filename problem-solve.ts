@@ -117,19 +117,68 @@ output 9
 
 */
 
-function findLargest(arr: number[]) {
+// function findLargest(arr: number[]) {
 
 
-    let max = arr[0]
 
-    console.log("outer side");
-    for (let i = 1; i <= arr.length - 1; i++) {
-        console.log(arr[i]);
-        if (arr[i] > max)
-            max = arr[i]
+//     let max = arr[0]
+
+//     console.log("outer side");
+//     for (let i = 1; i <= arr.length - 1; i++) {
+//         console.log(arr[i]);
+//         if (arr[i] > max)
+//             max = arr[i]
+//     }
+
+//     return max
+// }
+
+// console.log(findLargest([2, 4, 1, 5,3,10]));
+
+
+
+
+/*
+4. Check for Palindrome
+Task: Determine if a word reads the same forward and backward.
+
+Input: string s
+Output: boolean
+Constraints: Case-insensitive, ignore non-alphanumeric characters if you want a challenge.
+Edge Case: "racecar" (true) vs "hello" (false).
+Hint: Compare the string with its reverse.
+*/
+
+
+
+
+
+function isPalindrome(str: string): boolean {
+
+    let i = 0
+    let j = str.length - 1
+
+
+    while (i < j) {
+        if (str[i] !== str[j]) {
+            console.log("hit second condition");
+            return false
+        }
+
+        i++
+        j--
     }
+    return true
 
-    return max
 }
 
-console.log(findLargest([2, 4, 1, 5,3,10]));
+
+// isPalindrome("faysal")
+
+console.log(isPalindrome("madam"));
+
+
+
+
+
+
