@@ -229,18 +229,49 @@ Hint: Iterate through the string and check if each character is in a "vowel" set
 
 
 
-function countVowels(str: string): number {
-    const vowels = ["a", "e", "i", "o", "u"];
-    let total = 0;
+// function countVowels(str: string): number {
+//     const vowels = ["a", "e", "i", "o", "u"];
+//     let total = 0;
 
-    for (let i = 0; i < str.length; i++) {
-        if (vowels.includes(str[i].toLowerCase())) {
-            total++;
-        }
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowels.includes(str[i].toLowerCase())) {
+//             total++;
+//         }
+//     }
+
+//     return total;
+// }
+
+
+
+/*
+7. Factorial Calculation
+Task: Find the factorial of a non-negative integer n.
+
+Input: integer n
+Output: integer
+Constraints: 0 <= n <= 12.
+Edge Case: n = 0 (Factorial of 0 is 1).
+Hint: Use a for-loop or recursion.
+
+*/
+
+
+
+
+function factorial(n: number): number {
+    let result = 1;
+
+    for (let i = 2; i <= n; i++) {
+        result *= i;
     }
 
-    return total;
+    return result;
 }
+
+console.log(factorial(0));
+
+
 
 
 
