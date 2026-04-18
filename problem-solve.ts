@@ -77,25 +77,25 @@ return the
 
 
 
-function FizzBuzz(n: number) {
-    let i = 1;
+// function FizzBuzz(n: number) {
+//     let i = 1;
 
-    while (i <= n) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("FizzBuzz");
-        } else if (i % 3 === 0) {
-            console.log("Fizz");
-        } else if (i % 5 === 0) {
-            console.log("Buzz");
-        } else {
-            console.log(i); 
-        }
+//     while (i <= n) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log("FizzBuzz");
+//         } else if (i % 3 === 0) {
+//             console.log("Fizz");
+//         } else if (i % 5 === 0) {
+//             console.log("Buzz");
+//         } else {
+//             console.log(i);
+//         }
 
-        i++;
-    }
-}
+//         i++;
+//     }
+// }
 
-FizzBuzz(20);
+// FizzBuzz(20);
 
 
 
@@ -108,11 +108,28 @@ Output: integer
 Constraints: Array will have at least one element.
 Edge Case: Array with all negative numbers.
 Hint: Initialize a variable with the first element of the array.
-*/ 
+*/
 
 
-function 
 
-/* */ 
+/* input [1,2,3,4,5,6,7,8,9]
+output 9
+
+*/
+
+function findLargest(arr: number[]) {
 
 
+    let max = arr[0]
+
+    console.log("outer side");
+    for (let i = 1; i <= arr.length - 1; i++) {
+        console.log(arr[i]);
+        if (arr[i] > max)
+            max = arr[i]
+    }
+
+    return max
+}
+
+console.log(findLargest([2, 4, 1, 5,3,10]));
