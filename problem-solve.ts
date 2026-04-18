@@ -200,17 +200,54 @@ Hint: Use an accumulator variable inside a loop.
 
 
 // following reverse method 
-function sumOfArray(arr: number[]): number {
-    let total = 0
+// function sumOfArray(arr: number[]): number {
+//     let total = 0
 
-    for (let i = arr.length - 1; i >= 0; i--) {
-        total += arr[i]
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         total += arr[i]
+//     }
+
+//     return total
+// }
+
+// console.log(sumOfArray([1, 3, 5, 6, 7, 8, 9]));
+
+
+
+/*
+
+6. Count Vowels
+Task: Count how many vowels (a, e, i, o, u) are in a given string.
+
+Input: string s
+Output: integer
+Constraints: s contains English letters and spaces.
+Edge Case: String with no vowels.
+Hint: Iterate through the string and check if each character is in a "vowel" set.
+
+*/
+
+
+
+function countVowels(str: string): number {
+    const vowels = ["a", "e", "i", "o", "u"];
+    let total = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i].toLowerCase())) {
+            total++;
+        }
     }
 
-    return total
+    return total;
 }
 
-console.log(sumOfArray([1, 3, 5, 6, 7, 8, 9]));
+
+
+
+
+
+
 
 
 
