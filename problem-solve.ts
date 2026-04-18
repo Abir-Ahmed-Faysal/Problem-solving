@@ -153,32 +153,64 @@ Hint: Compare the string with its reverse.
 
 
 
-function isPalindrome(str: string): boolean {
+// function isPalindrome(str: string): boolean {
 
-    let i = 0
-    let j = str.length - 1
+//     let i = 0
+//     let j = str.length - 1
 
 
-    while (i < j) {
-        if (str[i] !== str[j]) {
-            console.log("hit second condition");
-            return false
-        }
+//     while (i < j) {
+//         if (str[i] !== str[j]) {
+//             console.log("hit second condition");
+//             return false
+//         }
 
-        i++
-        j--
+//         i++
+//         j--
+//     }
+//     return true
+
+// }
+
+
+// // isPalindrome("faysal")
+
+// console.log(isPalindrome("madam"));
+
+
+
+
+
+
+
+
+/*
+5. Sum of Array Elements
+Task: Calculate the total sum of all numbers in an array.
+
+Input: int[] nums
+Output: integer
+Constraints: nums.length <= 500.
+Edge Case: Empty array (should return 0).
+Hint: Use an accumulator variable inside a loop.
+
+
+*/
+
+
+
+// following reverse method 
+function sumOfArray(arr: number[]): number {
+    let total = 0
+
+    for (let i = arr.length - 1; i >= 0; i--) {
+        total += arr[i]
     }
-    return true
 
+    return total
 }
 
-
-// isPalindrome("faysal")
-
-console.log(isPalindrome("madam"));
-
-
-
+console.log(sumOfArray([1, 3, 5, 6, 7, 8, 9]));
 
 
 
