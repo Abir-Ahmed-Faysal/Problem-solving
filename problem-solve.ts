@@ -272,6 +272,32 @@ function celToFrConverter(celsius: number): number {
 
 
 
+/*
+15. Count Occurrences of a Character
+Task: Given a string and a character, find how many times that character appears in the string.
+
+Input: string s, char c
+Output: integer
+Constraints: Case-sensitive.
+Edge Case: Character not present in the string.
+Hint: Use a counter variable and loop through the string.
+
+
+*/
+
+
+
+
+function occurrencesOfChar(str: string, char: string): number {
+    let result = 0
+
+    for (let i = 0; i <= str.length - 1; i++) {
+        if (str[i] === char)
+            result++
+    }
+    
+    return result
+}
 
 
 
