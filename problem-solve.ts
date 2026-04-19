@@ -259,26 +259,81 @@ Hint: Use a for-loop or recursion.
 
 
 
-function factorial(n: number): number {
-    let result = 1;
+// function factorial(n: number): number {
+//     let result = 1;
 
-    for (let i = 2; i <= n; i++) {
-        result *= i;
+//     for (let i = 2; i <= n; i++) {
+//         result *= i;
+//     }
+
+//     return result;
+// }
+
+// console.log(factorial(0));
+
+
+
+/*
+8. Even or Odd List
+Task: Given an array of numbers, return a new array containing only the even numbers.
+
+Input: int[] nums
+Output: int[]
+Constraints: nums.length <= 100.
+Edge Case: Array with no even numbers.
+Hint: Use the modulo operator inside a filter condition.
+
+
+*/
+
+
+// function evenNumberArray(num: number[]): number[] {
+
+//     let evenArray: number[] = []
+
+//     for (let i = 0; i <= num.length - 1; i++) {
+//         if (num[i] % 2 === 0) {
+//             evenArray.push(num[i])
+//         }
+//     }
+
+//     return evenArray
+
+// }
+
+// console.log(evenNumberArray([1, 3, 2, 5, 6]));
+
+
+/*
+10. Find the Minimum in an Array
+Task: Given an array of integers, return the smallest value.
+
+Input: int[] nums
+Output: integer
+Constraints: Array will not be empty.
+Edge Case: Multiple elements with the same minimum value.
+Hint: Similar logic to finding the maximum.
+
+
+*/
+
+
+function minimumArr(arr: number[]): number {
+
+    let min: number = arr[0]
+
+
+    for (let i = 0; i < arr.length - 1; i++) {
+
+        if (min > arr[i]) {
+            min = arr[i]
+        }
     }
-
-    return result;
+    console.log(min);
+    return min
 }
 
-console.log(factorial(0));
 
 
 
-
-
-
-
-
-
-
-
-
+minimumArr([1, 2, 3, 2, 6, 0, 9, 2, 1])
