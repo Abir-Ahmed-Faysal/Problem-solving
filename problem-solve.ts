@@ -212,23 +212,23 @@ Output: int[]
 Constraints: Order of elements should be preserved.
 Edge Case: Array where all elements are the same.
 Hint: Use a "Set" data structure or check if an element is already in the result list.
-*/ 
+*/
 
 
 
 
 
 function uniqueArr(arr: number[]): number[] {
-  const newSet = new Set(arr);
-  const valuePair = newSet.entries();
+    const newSet = new Set(arr);
+    const valuePair = newSet.entries();
 
-  let cleanArr: number[] = [];
+    let cleanArr: number[] = [];
 
-  for (const [_, value] of valuePair) {
-    cleanArr.push(value);
-  }
+    for (const [_, value] of valuePair) {
+        cleanArr.push(value);
+    }
 
-  return cleanArr;
+    return cleanArr;
 }
 
 
@@ -272,7 +272,7 @@ function occurrencesOfChar(str: string, char: string): number {
         if (str[i] === char)
             result++
     }
-    
+
     return result
 }
 
